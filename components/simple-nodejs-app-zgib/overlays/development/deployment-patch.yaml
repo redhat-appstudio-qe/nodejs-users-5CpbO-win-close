@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-zgib
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-zaza-tenant/nodejs-users/simple-nodejs-app-zgib@sha256:b47770666237f8031bae4cf40f7090537d19ab5c595f99b2d3fbdddbd12a1812
+        name: my-nodejs
+        resources: {}
+status: {}
